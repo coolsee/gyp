@@ -148,6 +148,12 @@ def _CreateVersion(name):
   passed in that doesn't match a value in versions python will throw a error.
   """
   versions = {
+	  '2012': VisualStudioVersion('2012',
+                                  'Visual Studio 2012',
+                                  solution_version='12.00',
+                                  project_version='4.0',
+                                  flat_sln=False,
+                                  uses_vcxproj=True),
       '2010': VisualStudioVersion('2010',
                                   'Visual Studio 2010',
                                   solution_version='11.00',
